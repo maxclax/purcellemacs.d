@@ -3,6 +3,10 @@
 ;;; Code:
 
 (when (maybe-require-package 'docker)
+  ;; Configure docker package to use podman instead of docker
+  (setq docker-command "podman")
+  (setq docker-compose-command "podman-compose")
+
   (sanityinc/fullframe-mode 'docker-image-mode)
   (sanityinc/fullframe-mode 'docker-machine-mode)
   (sanityinc/fullframe-mode 'docker-volume-mode)
