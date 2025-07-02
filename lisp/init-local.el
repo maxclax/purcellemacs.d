@@ -16,7 +16,7 @@
 ;; Optional: Set font for specific faces
 (set-face-attribute 'fixed-pitch nil
 					:family "Berkeley Mono Variable"
-					:height 180))
+					:height 180)
 
 (provide 'init-local)
 ;;; init-local.el ends here
