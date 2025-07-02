@@ -15,8 +15,14 @@
 
 ;; Optional: Set font for specific faces
 (set-face-attribute 'fixed-pitch nil
-					:family "Berkeley Mono Variable"
-					:height 180)
+		    :family "Berkeley Mono Variable"
+		    :height 180)
+
+(use-package pyvenv
+  :ensure t
+  :config
+  (pyvenv-mode 1))  ; Enable pyvenv globally
+
 
 (provide 'init-local)
 ;;; init-local.el ends here
